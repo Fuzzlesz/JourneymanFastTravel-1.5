@@ -4,8 +4,8 @@
 
 namespace Hooks
 {
-	inline static REL::Relocation<std::uintptr_t> Can_Fast_Travel_Map_Hook{ REL::ID(53095), 0x328 };
-	inline static REL::Relocation<std::uintptr_t> Papyrus_Fast_Travel_Hook{ REL::ID(55457), 0xA1 };
+	inline static REL::Relocation<std::uintptr_t> Can_Fast_Travel_Map_Hook{ REL::ID(52208), 0x2C5 };		//VERIFIED
+	inline static REL::Relocation<std::uintptr_t> Papyrus_Fast_Travel_Hook{ REL::ID(54824), 0xA1 };			//VERIFIED
 
 	inline bool Install() {
 		if (!FastTravelManager::InstallCanFastTravelCheck()) {
