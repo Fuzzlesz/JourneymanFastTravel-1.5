@@ -91,7 +91,7 @@ namespace Events
 				settings->menuFastTravel = false;
 			}
 			else if (a_event->menuName == RE::CursorMenu::MENU_NAME) {
-				FastTravelManager::EnableFastTravel(true);
+				FastTravelManager::EnableFastTravel(nullptr, nullptr, nullptr, true);
 			}
 			else if (a_event->menuName == RE::BookMenu::MENU_NAME) {
 				auto settings = Settings::GetSingleton();

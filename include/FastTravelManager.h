@@ -3,7 +3,7 @@
 class FastTravelManager
 {
 public:
-	
+
 	static bool InstallCanFastTravelCheck();
 	static bool InstallPapyrusFastTravelCheck();
 
@@ -28,11 +28,11 @@ public:
 		return func();
 	}
 
-	static void EnableFastTravel(bool a_enable)
+	static void EnableFastTravel(void* a1, void* a2, void* a3, bool a_enable)
 	{
 		using func_t = decltype(&FastTravelManager::EnableFastTravel);
 		REL::Relocation<func_t> func{ REL::ID(54946) };							//VERIFIED
-		return func(a_enable);
+		return func(a1, a2, a3, a_enable);
 	}
 
 	inline static RE::TESWorldSpace* GetWorldSpaceHook(RE::TESObjectREFR* a1);
